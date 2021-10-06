@@ -7,7 +7,8 @@
     cursor: pointer;
 }
 header{
-    background: #e3f2fd;    
+    background: #e3f2fd;  
+    clear: both;  
 }
 .navbar-brand{
     display: block;
@@ -31,9 +32,10 @@ header{
     line-height: 30px;
 }
 
-.col-md-4 a,col-sm-12 a{
+.col-md-4 a{
     text-decoration: none;
 }
+
 #menu-tile, #special-tile, #food-tile{
     height: 150px;
     width: 100%;
@@ -44,7 +46,7 @@ header{
 .responsiveimg{
     width: 100%;
 }
-.col-md-4:hover,col-sm-12:hover{
+.col-md-4:hover, .col-sm-12:hover{
     border: 2px solid #e3f2fd;
 }
 
@@ -63,6 +65,8 @@ header{
 
 
 
+
+
 @media all and (min-width: 768px) {
 
     .title{
@@ -73,11 +77,12 @@ header{
         font-size: 16px;
         line-height: 30px;
     }
-
-    #section-a .col-md-4{
+    .col-md-4{
         width: 30%;
         float: left;
     }
+
+ 
 
       
       

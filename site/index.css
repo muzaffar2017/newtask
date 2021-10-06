@@ -31,7 +31,14 @@ header{
     font-size: 14px;
     line-height: 30px;
 }
-
+.container-fluid{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+}
+#section-a{
+    border: 1px solid;
+}
 .col-md-4 a{
     text-decoration: none;
 }
@@ -81,6 +88,7 @@ header{
         width: 30%;
         float: left;
     }
+
 
  
 

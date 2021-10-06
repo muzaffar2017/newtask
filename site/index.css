@@ -7,4 +7,16 @@
     text-decoration: none;
     cursor: pointer;
 }
-
+header{
+    background: #e3f2fd;
+    overflow: hidden;
+}
+.container-fluid {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.title{
+    text-align: center;
+}

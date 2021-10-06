@@ -11,6 +11,10 @@ header{
     background: #e3f2fd;    
 
 }
+.navbar-brand{
+    display: block;
+    margin: 0 auto;
+}
 .navbar-toggler{
     border: transparent;
 }
@@ -28,9 +32,26 @@ header{
     font-size: 14px;
     line-height: 30px;
 }
-header .row{
-    margin: 70px 0;
+#menu-tile, #special-tile, #food-tile{
+    height: 150px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+    overflow: hidden;
 }
+/*
+#menu-tile:hover, #special-tile:hover, #food-tile:hover{
+    border: 2px solid #e3f2fd;
+}
+*/
+.responsiveimg{
+    width: 100%;
+}
+.col-md-4:hover,col-sm-12:hover{
+    border: 2px solid #e3f2fd;
+}
+
+
 
 
 
@@ -44,4 +65,10 @@ header .row{
         font-size: 16px;
         line-height: 30px;
     }
+    .col-md-4{
+        width: 30%;
+        float: left;
+    }
+
+
 }

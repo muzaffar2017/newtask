@@ -4,12 +4,10 @@
     padding: 0;
     color: #111;
     list-style: none;
-    text-decoration: none;
     cursor: pointer;
 }
 header{
     background: #e3f2fd;    
-
 }
 .navbar-brand{
     display: block;
@@ -32,6 +30,10 @@ header{
     font-size: 14px;
     line-height: 30px;
 }
+
+.col-md-4 a,col-sm-12 a{
+    text-decoration: none;
+}
 #menu-tile, #special-tile, #food-tile{
     height: 150px;
     width: 100%;
@@ -39,17 +41,23 @@ header{
     margin-bottom: 15px;
     overflow: hidden;
 }
-/*
-#menu-tile:hover, #special-tile:hover, #food-tile:hover{
-    border: 2px solid #e3f2fd;
-}
-*/
 .responsiveimg{
     width: 100%;
 }
 .col-md-4:hover,col-sm-12:hover{
     border: 2px solid #e3f2fd;
 }
+
+.cntr{
+    text-align: center;
+    display: inline-block;
+    background: #99cdf1;
+    border-radius: 25px; 
+    margin: 0 auto;   
+    width: 15%;
+    line-height: 50px;
+}
+
 
 
 
@@ -65,10 +73,14 @@ header{
         font-size: 16px;
         line-height: 30px;
     }
-    .col-md-4{
+
+    #section-a .col-md-4{
         width: 30%;
         float: left;
     }
+
+      
+      
 
 
 }

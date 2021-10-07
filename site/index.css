@@ -59,7 +59,7 @@ header .row{
     overflow: hidden;
 }
 
-.col-md-4:hover, .col-sm-12:hover{
+.col-md-4:hover{
     border: 2px solid #80c1f0;
 }
 #section-b{
@@ -89,16 +89,19 @@ header .row{
     outline: transparent;
     background-color: transparent;
 }
-#section-c{
-    border: 1px solid;
+#order-tile, #delivery-tile, #followus-tile{
+    position: relative;
+    width: 100%;
+    padding: 30px 20px;
+    overflow: hidden;
 }
+
 #order-tile{
     background-color: #80c1f0;
-    padding-bottom: 50px;
 }
 #order-tile h2{
     text-transform: uppercase;
-    font-size: 22px;
+    font-size: 20px;
 }
 .button{
     height: 45px;
@@ -126,22 +129,23 @@ header .row{
 
 #delivery-tile{
     background-color: #e7e7e7;
-    padding-bottom: 50px;
 }
 
 #delivery-tile h3{
     color: #3898dd;
     margin: 0 auto;
     display: block;
+    font-size: 20px;
 }
 #delivery-tile h3{
-    line-height: 85px;
+    line-height: 75px;
 }
 .blocktxt{
     color: #3898dd;
     margin: 0 auto;
     display: block;
     width: 30em;
+    font-size: 12px;
 }
 
 #delivery-tile a{
@@ -149,11 +153,11 @@ header .row{
     margin: 0 auto;
     text-align: center;
     background-color: #3898dd;
-    width: 15%;
+    width: 50%;
     line-height: 35px;
     border-radius: 50px;
     margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 #delivery-tile span{
     color: #fff;
@@ -166,7 +170,68 @@ header .row{
 #followus-tile{
     background-color: #ceecac;
 }
+.fa-quote-left{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    color: #0666aa;
+    line-height: 50px;
+}
+#followus-tile a{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 50px;
+    text-decoration: none;
+}
+#followus-tile span{
+    color: #0666aa;
+    font-weight: 900;
+    font-size: large;
+}
+.sociologo{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
 
+li{
+    display: inline-block;
+    width: 50px;
+    border-radius: 50px;
+    height: 35px;
+}
+
+footer{
+    background-color: #80c1f0;
+    display: grid;
+}
+.frow{
+    display: flex;
+}
+aside{
+    flex-basis: 50%;
+}
+aside h5{
+    color: #fff;
+    font-size: 22px;
+    line-height: 30px;
+}
+aside p{
+    color: #fff;
+    text-align: justify;
+    font-size: 12px;
+    line-height: 18px;
+}
+.col-md-4 h6{
+    color: #fff;
+}
+a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
 
 
 
@@ -177,12 +242,6 @@ header .row{
 
 
 @media all and (min-width: 768px) {
-    .container-fluid{
-        max-width: 1300px;
-        margin: auto;
-        padding-left: 20px;
-        padding-left: 20px;
-    }
     .title{
         font-size: 36px;
         line-height: 50px;
@@ -191,12 +250,9 @@ header .row{
         font-size: 16px;
         line-height: 30px;
     }
-    main{
-        height: 100vh;
-        width: 100vw;
-    }
+
     .col-md-4{
-        flex-basis: 30%;
+        flex-basis: 33%;
         float: left;
     }
     .col-sm-6 h3{
@@ -209,6 +265,9 @@ header .row{
         text-align: justify;
         line-height: 40px;
     }
+    #order-tile{
+        padding-bottom: 50px;
+    }
     #order-tile h4{
         font-size: 22px;
     }
@@ -216,6 +275,49 @@ header .row{
         font-size: 14px;
     }
 
+    #order-tile h2{
+        font-size: 22px;
+    }
+    #order-tile h4{
+        font-size: 22px;
+    }
+    #order-tile p{
+        font-size: 14px;
+    }
+    
+    
+    
+    #delivery-tile{
+        padding-bottom: 50px;
+    }
+    
+    #delivery-tile h3{
+        line-height: 85px;
+        font-size: 22px;
+    }
+    .blocktxt{
+        width: 30em;
+        font-size: 14px;
+    }
+    
+    #delivery-tile a{
+        width: 15%;
+        margin-top: 30px;
+    }
+
+
+
+    .col-md-3 p{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    aside p{
+        font-size: 16px;
+        line-height: 20px;
+        margin-right: 50px;
+    }
+
+    
 
 }
 

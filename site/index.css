@@ -6,27 +6,54 @@
     list-style-type: none;
     text-decoration: none;
 }
-.container{
-    border: 1px solid;
+header{
     max-width: 100vw;
+    height: 15vh;
 }
 .inner-header{
     display: flex;
-    border: 1px solid blue;
     height: 15vh;
     max-width: 100vw;
 }
 .logo{
     width: 10vw;    
 }
-.myimage{
+.logimage{
     width: 100%;
 }
 .navbar{
-    border: 1px solid red;
     margin: auto 0px;
 }
 .navitems{
     display: inline-block;
     padding: 15px 35px;
+}
+.showcase{
+    height: 40vh;
+    display: flex;
+}
+div{
+    height: 40vh;
+}
+.sec-img{
+    height: 40vh;
+}
+.para{
+    text-align: justify;
+    padding: 38px;
+}
+.btn{
+    display: inline-block;
+    width: 40vw;
+    padding: 20px;
+    background-color: transparent;
+    font-size: larger;
+    margin: 50px 100px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    font-style: italic;
+    color: sandybrown;
 }

@@ -6,3 +6,27 @@
     list-style-type: none;
     text-decoration: none;
 }
+.container{
+    border: 1px solid;
+    max-width: 100vw;
+}
+.inner-header{
+    display: flex;
+    border: 1px solid blue;
+    height: 15vh;
+    max-width: 100vw;
+}
+.logo{
+    width: 10vw;    
+}
+.myimage{
+    width: 100%;
+}
+.navbar{
+    border: 1px solid red;
+    margin: auto 0px;
+}
+.navitems{
+    display: inline-block;
+    padding: 15px 35px;
+}

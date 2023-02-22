@@ -1,86 +1,132 @@
-*{
-    margin: 0%;
-    padding: 0;
-    box-sizing: border-box;
-    color: #000;
-    list-style-type: none;
-    text-decoration: none;
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000;
+  list-style-type: none;
+  text-decoration: none;
 }
 
-header{
-    max-width: 100vw;
-    height: 10vh;
-    margin-bottom: 2px;
-    box-shadow: #1c1c1c1c 1px 1px 2px;
+header {
+  max-width: 100vw;
+  height: 10vh;
+  margin-bottom: 2px;
+  box-shadow: #1c1c1c1c 1px 1px 2px;
 }
-.inner-header{
+.inner-header {
+  display: flex;
+  height: 10vh;
+  max-width: 100vw;
+  align-items: center;
+  position: fixed;
+}
+.logo {
+  margin: 15px 50px;
+}
+.logimage {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+.navbar {
+  margin: auto 0px;
+}
+.navitems {
+  display: inline-block;
+  padding: 15px 35px;
+}
+
+
+
+                        /*main div start from here*/
+
+
+/*1 section start from here*/
+
+.green-panel {
+  height: 72px;
+  background-color: #1e3932;
+}
+.title {
+  color: #fff;
+  margin-left: 25px;
+  padding: 25px;
+  font-size: 21px;
+}
+
+/*2 section start from here*/
+
+.flex-container{
     display: flex;
-    height: 10vh;
-    max-width: 100vw;
-    align-items: center;
+    width: 100vw;
 }
-.logo{
-    margin: 15px 50px;
+
+.box{
+    width: 15vw;
+    margin-left: 5px;
 }
-.logimage{
-    width: 50px;
-    height: 50px;
-    vertical-align: middle;    
+.sec-images{
+    width: 75%;
+    border-radius: 50%;
+    margin: 10px 25px;
 }
-.navbar{
-    margin: auto 0px;
-}
-.navitems{
-    display: inline-block;
-    padding: 15px 35px;
+.box-title{
+    text-align: center;
+    padding: 15px;
+    font-size: 21px;
 }
 
 
-                /*1 section start from here*/
+/*3 showcase div*/
 
-.green-panel{
-    height: 72px;
-    background-color: #1e3932;
+.showcase {
+  height: 40vh;
+  display: flex;
+  border: 1px solid;
+  margin: 2px 20px;
+  background-image: url("./img/starbucks.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
 }
-
-
-
-                /*main div start from here*/
-
-
-.showcase{
-    height: 40vh;
-    display: flex;
-    border: 1px solid;
-    margin: 2px 20px;
-    background-image: url('./img/starbucks.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+.showcase:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
-div{
-    height: 40vh;
-}
+/*
 .sec-img{
     height: 40vh;
 }
-.para{
-    text-align: justify;
-    padding: 38px;
+*/
+
+.para {
+  height: 30vh;
+  margin-top: 50px;
 }
-.btn{
-    display: inline-block;
-    width: 40vw;
-    padding: 20px;
-    background-color: transparent;
-    font-size: larger;
-    margin: 50px 100px;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
+.showcase-text {
+  text-align: justify;
+  color: #fff;
+  width: 80vw;
+  padding: 50px 30px;
+  font-size: 28px;
 }
-.btn:hover{
-    font-style: italic;
-    color: sandybrown;
+
+.btn {
+  display: inline-block;
+  width: 40vw;
+  padding: 20px;
+  background-color: transparent;
+  font-size: larger;
+  margin: 25px 100px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+.btn:hover {
+  font-style: italic;
+  color: sandybrown;
 }

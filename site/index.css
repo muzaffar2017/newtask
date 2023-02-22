@@ -53,6 +53,11 @@ header{
     display: flex;
     border: 1px solid;
     margin: 2px 20px;
+    background-image: url('./img/starbucks.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 div{
     height: 40vh;

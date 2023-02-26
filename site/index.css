@@ -95,11 +95,46 @@ header {
   background-color: #fff;
   margin-left: 20px;
   margin-bottom: 20px;
+  box-shadow: #1c1c1c1c 1px 1px 4px;
+  border-radius: 10px;
+  height: 20vh;
+}
+.inner-box{
+  display: flex;
+}
+
+
+.box-desc{
+  padding: 10px;
+  margin: 10px 0;
 }
 
 .box-images{
   height: 10vh;
   margin: 15px 25px;
+  border-radius: 15px;
+}
+
+.card-price{
+  display: inline-block;
+  width: 10vw;
+  font-weight: 600;
+}
+
+.card-btn{
+  border: none;
+  display: inline-block;
+  background-color: #00754a;
+  width: 8vw;
+  height: 3vh;
+  margin-left: 15px;
+  font-weight: 900;
+  color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.card-btn:hover{
+  background-color: #1e3932;
 }
 
 
@@ -132,6 +167,7 @@ header {
 
 .txt{
   text-align: justify;
+  margin: 2px 20px;
 }
 
 .para {
@@ -160,7 +196,7 @@ header {
 }
 .btn:hover {
   font-style: italic;
-  color: sandybrown;
+  color: #1e3932;
 }
 
 

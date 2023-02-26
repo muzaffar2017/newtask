@@ -127,7 +127,7 @@ header {
   display: inline-block;
   background-color: #00754a;
   width: 8vw;
-  height: 3vh;
+  height: 4vh;
   margin-left: 15px;
   font-weight: 900;
   color: #fff;
@@ -215,6 +215,15 @@ footer{
   display: flex;
   margin: 25px 100px;
 }
+.footer-img{
+  margin: 25px 50px;
+  width: 50%;
+}
+
+.card{
+  padding: 10px;
+}
+
 h5{
   font-size: 22px;
   color: #fff;

@@ -3,28 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./index.css">
   <title>Sign In</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./index.css">
 </head>
 <body>
   <div class="form-wrapper">
     <div class="login-inner">
       <div class="form-inner">
+        <form action="" onsubmit="return val()">
         <div class="form-input">
           <label for="username">Username:</label>
           <input type="text" name="" id="" placeholder="Enter Username">
           <p class="errormsg">Message display here</p>
-        </div>
+        </div><br>
         <div class="form-input">
           <label for="password">Password:</label>
           <input type="password" name="" id="" placeholder="Enter Password">
           <p class="errormsg">Message display here</p>
-        </div>
+        </div><br>
         <div class="captcha-form">
           <label for="Enter">Enter Captcha</label>
+          <textarea class="captcha" id="captcha" cols="8" rows="1" disabled></textarea>
+          <i class="fa fa-refresh reload" onclick="reloadCaptcha()"></i> <br>
+          <p class="captchaMsg">
+              Error message will appear here
+          </p> <br>
+          <input type="text" class="enteredCaptcha" id="enteredCaptcha" placeholder="Enter Captcha here">
+          <br> <br>
+          <input type="submit"> <input type="reset">
         </div>
+      </form>
       </div>
     </div>
   </div>
+
+
+
+  <script>
+    function val(){
+        var username = document.getElementById('usrname').value;
+        var password = document.getElementById('pwd').value;
+        if(username==""){
+            document.getElementById("errorMsg").innerHTML = "Username cannot be empty";
+            document.getElementById("errorMsg").style.visibility="visible";
+            return false;
+        }
+        else if(username.length<5){
+            document.getElementById("errorMsg").innerHTML = "Username cannot be too short";
+            document.getElementById("errorMsg").style.visibility="visible";
+            return false;
+        }
+        else if(password==""){
+            document.getElementById("errorMsg").innerHTML = "Password cannot be empty";
+            document.getElementById("errorMsg").style.visibility="visible";
+            return false;
+        }
+        else if(password.length<5){
+            document.getElementById("errorMsg").innerHTML = "Password cannot be too short";
+            document.getElementById("errorMsg").style.visibility="visible";
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+    function generateCaptcha(){
+        var captcha = "";
+        var key;
+        var letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O',
+             'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd',
+             'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
+             't', 'u', 'v', 'w', 'x', 'y', 'z', 0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+        for(i=0;i<6;i++){
+            key = Math.floor(letters.length*Math.random());
+            captcha=captcha+letters[key];
+        }
+        document.getElementById('captcha').value = captcha;
+    }
+    function reloadCaptcha(){
+        generateCaptcha();
+    }
+    generateCaptcha();
+    setInterval(generateCaptcha,5000)
+</script>
+
+
+
+
+
+
+
 </body>
 </html>

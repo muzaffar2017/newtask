@@ -47,7 +47,7 @@ header {
                         /*main div start from here*/
 
 
-/*1 section start from here*/
+/*section 1 start from here*/
 
 .green-panel {
   height: 72px;
@@ -70,14 +70,13 @@ header {
   background-color: rgb(243, 242, 242);
 }
 
+.flex-heading{
+  padding: 15px;
+}
 
 .inner-flex{
     display: flex;
     flex-wrap: wrap;
-}
-
-.flex-heading{
-  padding: 15px;
 }
 
 .card{
@@ -94,6 +93,9 @@ header {
     font-size: 21px;
 }
 
+
+/*section 3 start from here*/
+
 .box{
   width: 25vw;
   background-color: #fff;
@@ -108,16 +110,18 @@ header {
 }
 
 
-.box-desc{
-  padding: 10px;
-  margin: 10px 0;
-}
-
 .box-images{
   height: 10vh;
   margin: 15px 25px;
   border-radius: 15px;
 }
+
+
+.box-desc{
+  padding: 10px;
+  margin: 10px 0;
+}
+
 
 .card-price{
   display: inline-block;
@@ -206,7 +210,7 @@ header {
 
 
 
-
+/*footer start from here*/
 
 footer{
   display: flex;
@@ -252,4 +256,85 @@ span{
   height: 3px;
   background-color: #fff;
   margin-left: 15px;
+}
+
+
+
+
+/*login form styling starts from here*/
+
+
+.form-wrapper{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-inner{
+  border: 1px solid #1e3932;
+  width: 50vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-inner{
+  background-color: #1e3932;
+  border-radius: 15px;
+  padding: 15px;
+}
+label{
+  display: inline-block;
+  width: 150px;
+  font-size: larger;
+  color: #fff;
+}
+input[type="text"],input[type="password"]{
+  width: 25vw;
+  height: 5vh;
+  border-radius: 10px;
+}
+.errormsg{
+  margin-top: 15px;
+  text-align: center;
+  color: red;
+  font-size: larger;
+  visibility: hidden;
+}
+.captcha{
+  height: 40px;
+  width: 25vw;
+  resize: none;
+  background-image: url(captcha-bg.png);
+  font-size: 25px;
+  text-align: center;
+}
+.reload{
+  font-size: 30px;
+  color:white;
+}
+.enteredCaptcha{
+  font-size: 20px;
+  margin-left: 150px;
+}
+.captchaMsg{
+  color: white;
+  visibility: hidden;
+}
+input[type="submit"],input[type="reset"]{
+  width: 14vw;
+  height: 5vh;
+  font-size: 22px;
+  border-radius: 10px;
+  color:white;
+  border: none;
+  margin: auto 3vw;
+}
+input[type="submit"]{
+  background-color: green;
+}
+input[type="reset"]{
+  background-color: red;
 }

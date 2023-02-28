@@ -23,7 +23,6 @@ header {
   display: flex;
   height: 10vh;
   max-width: 100vw;
-  display: flex;
   align-items: center;
   flex-wrap: wrap;  
 }
@@ -63,10 +62,14 @@ header {
 
 /*2 section start from here*/
 
-.flex-container{
+.flex-container,.barista-container{
   max-width: 95vw;
   margin: 2px 20px;
 }
+.barista-container{
+  background-color: rgb(243, 242, 242);
+}
+
 
 .inner-flex{
     display: flex;

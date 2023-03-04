@@ -21,25 +21,38 @@ header {
 }
 .inner-header {
   display: flex;
-  height: 10vh;
-  max-width: 100vw;
   align-items: center;
   flex-wrap: wrap;  
+  height: 10vh;
+  max-width: 100vw;
 }
+
 .logo {
   margin: 15px 50px;
 }
+
 .logimage {
   width: 50px;
   height: 50px;
   vertical-align: middle;
 }
+
 .navbar {
-  margin: auto 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
 }
+
+
 .navitems {
   display: inline-block;
   padding: 15px 35px;
+}
+
+.signform{
+  border: 1px solid;
+  margin: auto 20vw;
 }
 
 

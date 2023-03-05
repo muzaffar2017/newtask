@@ -284,7 +284,7 @@ span{
 
 /*login form styling starts from here*/
 
-
+/*
 .form-wrapper{
   width: 100vw;
   height: 100vh;
@@ -358,4 +358,106 @@ input[type="submit"]{
 }
 input[type="reset"]{
   background-color: red;
+}
+
+*/
+
+.form-wrapper{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-inner{
+  border: 1px solid #1e3932;
+  width: 60vw;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background-color: white;
+}
+.form-heading{
+	color: #1e3932;
+}
+.form-inner{
+  border-radius: 15px;
+  padding: 15px;
+  width: 50vw;
+}
+.form-input{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+label{
+  display: inline-block;
+  width: 120px;
+  font-size: larger;
+}
+input[type="text"],input[type="password"]{
+  width: 21vw;
+  height: 4vh;
+  border: 1px solid;
+  border-radius: 10px;
+  font-size: 20px;
+  outline: transparent;
+}
+.errormsg{
+  margin-left: 15px;
+  text-align: center;
+  color: red;
+  font-size: 16px;
+  visibility: hidden;
+}
+
+.captchalabel{
+	position: absolute;
+	left: 27vw;
+}
+
+.captcha{
+  height: 40px;
+  width: 25vw;
+  resize: none;
+  background-image: url(captcha-bg.png);
+  font-size: 25px;
+  text-align: center;
+  margin-left: 75px;
+}
+.reload{
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.captchaMsg{
+  color: red;
+  visibility: hidden;  
+}
+
+.enteredCaptcha{
+  font-size: 20px;
+}
+
+input[type="submit"]{
+  width: 25vw;
+  height: 5vh;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  margin: auto 3vw;
+  background-color: transparent;
+}
+input[type="submit"]:hover{
+	background-color: #1e3932;
+	color: #fff;
+	cursor: pointer;
+}
+.signup{
+	text-decoration: none;
+	color: #1e3932;
+	font-size: larger;
 }

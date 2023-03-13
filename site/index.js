@@ -1,32 +1,34 @@
 
 
-  function val(){
+  function validateForm(){
       var username = document.getElementById('usrname').value;
       var password = document.getElementById('pwd').value;
       if(username==""){
-          document.getElementById("errorMsg").innerHTML = "Username cannot be empty";
-          document.getElementById("errorMsg").style.visibility="visible";
+          document.getElementById('errorMsg').innerHTML = "Username cannot be empty";
+          document.getElementById('errorMsg').style.visibility="visible";
           return false;
       }
       else if(username.length<5){
-          document.getElementById("errorMsg").innerHTML = "Username cannot be too short";
-          document.getElementById("errorMsg").style.visibility="visible";
+          document.getElementById('errorMsg').innerHTML = "Username cannot be too short";
+          document.getElementById('errorMsg').style.visibility="visible";
           return false;
       }
       else if(password==""){
-          document.getElementById("errorMsg").innerHTML = "Password cannot be empty";
-          document.getElementById("errorMsg").style.visibility="visible";
+          document.getElementById('errorMsg').innerHTML = "Password cannot be empty";
+          document.getElementById('errorMsg').style.visibility="visible";
           return false;
       }
       else if(password.length<5){
-          document.getElementById("errorMsg").innerHTML = "Password cannot be too short";
-          document.getElementById("errorMsg").style.visibility="visible";
+          document.getElementById('errorMsg').innerHTML = "Password cannot be too short";
+          document.getElementById('errorMsg').style.visibility="visible";
           return false;
       }
       else{
           return true;
       }
   }
+
+
   function generateCaptcha(){
       var captcha = "";
       var key;
@@ -44,5 +46,5 @@
       generateCaptcha();
   }
   generateCaptcha();
-  setInterval(generateCaptcha,5000)
+  setInterval(generateCaptcha,25000)
 
